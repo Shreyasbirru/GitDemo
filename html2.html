@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+      <ul>
+        <li class = "cl">list 1</li>
+        <li id="First">list 2</li>
+        <li class="cl">list3</li>
+      </ul>
+      
+      <ul>
+        <li >list 1</li>
+        <li >list 2</li>
+        <li id="Intro1">list3</li>
+      </ul>  
+
+
+      <h2 class = "intro">Heading 1</h2>
+      <div id = "div1">
+      <p class="intro">Paragraph 1</p>
+      <h2 class="intro">Heading 2</h2>
+      <p>Paragraph 2</p>
+      <h2>Heading 3</h2>
+      <p class ="intro">Pargraph 3</p>
+      </div>
+      <script>
+    //     var elm = document.getElementById("First"); 
+    //     // get
+    //     console.log(elm.innerHTML);
+    //     // set
+    //     elm.innerHTML = "<p>hello</p>";   
+
+    //     var elm = document.getElementsByClassName("cl");
+    //     for(let i = 0; i< elm.length;i++)
+    //     {
+    //    elm[i].innerHTML = " <p>Hello<p> ";
+    //    }
+     
+        //  let div1 = document.getElementById("div1"); //htis represents the all div document 
+        //  let elm = div1.getElementsByTagName("h2");    //this represents the  div in only h2 tag                                            
+        
+        //  for(let i = 0; i< elm.length;i++)                                                            
+        //  {                                                                                             
+        //  elm[i].innerHTML = "Hello";                                                       
+        //  }
+      //  let elm = document.querySelectorAll("p.intro");
+
+      //  for(let i=0; i<elm.length;i++)
+      //  {
+      //   elm[i].innerHTML = "Hello";
+      //  }
+       
+       var elm = document.getElementById("Intro1");
+       var prt = elm.parentElement;
+       console.log(prt);
+       prt.innerHTML = "HEllo ";
+       
+
+
+       </script> 
+    </body>
+</html>
